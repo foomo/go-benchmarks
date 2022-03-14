@@ -1,0 +1,26 @@
+goos: darwin
+goarch: amd64
+pkg: foomo/benchmarks/dlock
+cpu: VirtualApple @ 2.50GHz
+BenchmarkLockByMongoSquareLock-10    	     346	   2938261 ns/op	   31262 B/op	     525 allocs/op
+BenchmarkLockByMongoSquareLock-10    	     349	   3211978 ns/op	   31272 B/op	     525 allocs/op
+BenchmarkLockByMongoSquareLock-10    	     418	   3045369 ns/op	   31275 B/op	     525 allocs/op
+BenchmarkLockByMongoSquareLock-10    	     372	   2925397 ns/op	   31308 B/op	     525 allocs/op
+BenchmarkLockByMongoSquareLock-10    	     390	   3062703 ns/op	   31274 B/op	     525 allocs/op
+BenchmarkLockByRedisRedSync-10       	     938	   1126281 ns/op	    1630 B/op	      39 allocs/op
+BenchmarkLockByRedisRedSync-10       	     961	   1394711 ns/op	    1633 B/op	      39 allocs/op
+BenchmarkLockByRedisRedSync-10       	    1036	   1282508 ns/op	    1618 B/op	      39 allocs/op
+BenchmarkLockByRedisRedSync-10       	     765	   1343425 ns/op	    1623 B/op	      39 allocs/op
+BenchmarkLockByRedisRedSync-10       	     964	   1237453 ns/op	    1620 B/op	      39 allocs/op
+BenchmarkLockByBSMRedisLock-10       	    1012	   1284315 ns/op	    1170 B/op	      28 allocs/op
+BenchmarkLockByBSMRedisLock-10       	    1040	   1090842 ns/op	    1170 B/op	      28 allocs/op
+BenchmarkLockByBSMRedisLock-10       	    1058	   1120548 ns/op	    1170 B/op	      28 allocs/op
+BenchmarkLockByBSMRedisLock-10       	    1114	   1037792 ns/op	    1179 B/op	      28 allocs/op
+BenchmarkLockByBSMRedisLock-10       	    1088	   1092390 ns/op	    1168 B/op	      28 allocs/op
+BenchmarkLockByETCD-10               	      21	  58090234 ns/op	   18517 B/op	     305 allocs/op
+BenchmarkLockByETCD-10               	      18	  58423965 ns/op	   18760 B/op	     309 allocs/op
+BenchmarkLockByETCD-10               	      22	  60911805 ns/op	   18941 B/op	     312 allocs/op
+BenchmarkLockByETCD-10               	      20	  61197581 ns/op	   18419 B/op	     303 allocs/op
+BenchmarkLockByETCD-10               	      19	  53199463 ns/op	   18979 B/op	     313 allocs/op
+PASS
+ok  	foomo/benchmarks/dlock	51.256s
