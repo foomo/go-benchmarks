@@ -68,12 +68,13 @@ func BenchmarkLockByRedisRedSync(b *testing.B) {
 	rs := redsync.New(pool)
 
 	mutex := rs.NewMutex("test")
+	ctx := context.Background()
 
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
-		err := mutex.Lock()
+		err := mutex.LockContext(ctx)
 		require.NoError(b, err)
-		_, err = mutex.Unlock()
+		_, err = mutex.UnlockContext(ctx)
 		require.NoError(b, err)
 	}
 }
