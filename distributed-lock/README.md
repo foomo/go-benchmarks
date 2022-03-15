@@ -8,6 +8,14 @@ This is a test to benchmark existing go libraries for distributed locking for
   - Mongo: [github.com/square/mongo-lock](https://github.com/square/mongo-lock)
   - ETCD:  [github.com/etcd-io/etcd](https://github.com/etcd-io/etcd)
 
+## Run
+
+To run the benchmarky you would need docker-compose and go.
+After the dependencies are installed, run. 
+
+``` make benchmark ```
+
+
 ## Results
 
 The best performance was shown with redis, both redsync and redislock performing similarly.
