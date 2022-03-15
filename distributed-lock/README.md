@@ -13,7 +13,7 @@ This is a test to benchmark existing go libraries for distributed locking for
 To run the benchmarky you would need docker-compose and go.
 After the dependencies are installed, run. 
 
-``` make benchmark ```
+``` make bench ```
 
 
 ## Results
